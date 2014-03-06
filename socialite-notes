@@ -1,0 +1,65 @@
+IG will only accept 5000 requests per hour.
+	that's 83 per second
+
+We need a callback URL that will support GET and POST methods
+	IG sends a GET request to url to verify
+	IG then POSTs new data to the URL
+
+https://api.instagram.com/v1/tags/fuckyeah/media/recent?client_id=4a21d77050354080b0269479931553ad
+
+
+Toss tags into an array of o
+
+$scope.feed[
+	{
+		photoUrl: "",
+		title: "",
+		author: "",
+		source: "instagram",
+	}
+]
+
+{
+	pagination: {
+		next_max_tag_id: "1394098225781",
+		deprecation_warning: "next_max_id and min_id are deprecated for this endpoint; use min_tag_id and max_tag_id instead",
+		next_max_id: "1394098225781",
+		next_min_id: "1394098899193",
+		min_tag_id: "1394098899193",
+		next_url: "https://api.instagram.com/v1/tags/fuckyeah/media/recent?client_id=4a21d77050354080b0269479931553ad&max_tag_id=1394098225781"
+	},
+	meta: {
+		code: 200
+	},
+	data: [
+		{
+			attribution: null,
+			tags: [
+				"fuckyeah",
+				"food",
+				"catfish
+			],
+			location: null,
+			comments: {
+				count: 0,
+				data: [ ]
+			},
+			filter: "Valencia",
+			created_time: "1394070098",
+			link: "http://instagram.com/p/lLt74uDqbd/",
+			likes: {},
+			images: {},
+			users_in_photo: [ ],
+			caption: {},
+			type: "image",
+			id: "669830997039032029_266050936",
+			user: {}
+		},
+		{},
+		{},
+		{},
+		.
+		.
+		.
+	]
+}
