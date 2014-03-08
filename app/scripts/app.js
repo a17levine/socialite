@@ -21,7 +21,9 @@ angular.module('socialiteApp', [
       });
   }) 
   .run(function ($http, $rootScope) {
-    $http.defaults.headers.common.Authentication = 'Basic YmVlcDpib29w';
+
+    $rootScope.twitter = {};
+    $rootScope.twitter.secretKey = 'YmVlcDpib29w';
 
     $rootScope.feeds = [
       {
@@ -36,7 +38,7 @@ angular.module('socialiteApp', [
         image: {
           url: 'http://distilleryimage11.ak.instagram.com/1f2114faa5d511e3900e12c05a5762ef_8.jpg'
         },
-        tags: ['#pipe', '#hash', '#hastag', '#tag', '#graffiti'],
+        tags: ['#pipe', '#hash', '#hastag', '#tag', '#graffiti', '#vandalism', '#criminal', '#drugabuser'],
         title: 'Whats Up!',
         author: '@johnny'
       },

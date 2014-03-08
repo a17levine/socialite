@@ -11,10 +11,10 @@
   <span class="title">#SXSW</span>
 </header>
 <div ng-repeat="feed in feeds" class="row marketing clear">
-  <div class="col ">
+  <div class="col w30">
     <img ng-src="{{feed.image.url}}"  />
   </div>
-  <div class="col">
+  <div class="col w70">
       <div class="description">
        <h3>{{feed.author}}</h3>
        <span ng-repeat="tag in feed.tags">{{tag}} &nbsp;</span>
