@@ -1,3 +1,4 @@
+//https://api.instagram.com/v1/tags/fuckyeah/media/recent?client_id=4a21d77050354080b0269479931553ad
 
 var instragram = { 
 	igPost: igPost	
@@ -51,31 +52,15 @@ var instragram = {
 		// });
 	}
 
-	//https://api.instagram.com/v1/tags/fuckyeah/media/recent?client_id=4a21d77050354080b0269479931553ad
 	function getFeed (hashtag){
 		var igTagURL = 'https://api.instagram.com/v1/tags/',
 			recentTags = '/media/recent?',
 			tagName = 'fuckyeah',
 			clientID = 'client_id=4a21d77050354080b0269479931553ad',
-			igPostFeed = '',
-			request = '';
-		request = new XMLHttpRequest();
-		request.open('GET', igTagURL+hashtag+recentTags+clientID, true);
+			igPostFeed = '';
 
-		request.onload = function() {
-		  if (request.status >= 200 && request.status < 400){
-		    // Success!
-		    igPostFeed = JSON.parse(request.responseText);
-		    return igPostFeed;
-		  } else {
-		    // We reached our target server, but it returned an error
-
-		  }
-		};
-		request.onerror = function() {
-		  // There was a connection error of some sort
-		};
-		request.send();
+		igPostFeed = $http.get(igTagURL+hashtag+recentTags+clientID).success(successCallback);
+		return igPostFeed;
 	}
 
 	function getIGstream (){
