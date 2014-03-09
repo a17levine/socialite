@@ -10,7 +10,6 @@
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",
     "angular-route": "1.2.6",
-    "font-awesome": "latest",
     "normalize.css": "latest"
   },
   "devDependencies": {
