@@ -8,6 +8,15 @@ body {
   padding-top: 50px;
 }
 
+.statusInfo {
+  text-align: right;
+}
+
+.statusInfo h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
 body,header,footer {
   background-color: #fff;
 }

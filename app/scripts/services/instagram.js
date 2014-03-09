@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('socialiteApp')
-  .factory('twitter', function ($http, $rootScope, $q) {
+  .factory('instagram', function ($rootScope, $q, $http) {
 
-    var host = 'http://socialite-server.herokuapp.com/twitter';
+
+    var host = 'http://socialite-server.herokuapp.com/instagram';
 
     function get() {
       

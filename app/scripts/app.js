@@ -22,36 +22,4 @@ angular.module('socialiteApp', [
   }) 
   .run(function ($http, $rootScope) {
 
-    $rootScope.twitter = {};
-    $rootScope.twitter.secretKey = 'YmVlcDpib29w';
-
-    $rootScope.feeds = [
-      {
-        image: {
-          url: 'http://distilleryimage11.ak.instagram.com/1f2114faa5d511e3900e12c05a5762ef_8.jpg'
-        },
-        tags: ['#pipe', '#hash', '#hastag', '#tag', '#graffiti'],
-        title: 'Whats Up!',
-        author: '@johnny'
-      },
-      {
-        image: {
-          url: 'http://distilleryimage11.ak.instagram.com/1f2114faa5d511e3900e12c05a5762ef_8.jpg'
-        },
-        tags: ['#pipe', '#hash', '#hastag', '#tag', '#graffiti', '#vandalism', '#criminal', '#drugabuser'],
-        title: 'Whats Up!',
-        author: '@johnny'
-      },
-      {
-        image: {
-          url: 'http://distilleryimage11.ak.instagram.com/1f2114faa5d511e3900e12c05a5762ef_8.jpg'
-        },
-        tags: ['#pipe', '#hash', '#hastag', '#tag', '#graffiti'],
-        title: 'Whats Up!',
-        author: '@johnny'
-      }
-    ];
-
-    console.log($rootScope.feeds);
-
   });

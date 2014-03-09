@@ -10,15 +10,19 @@
 <header>
   <span class="title">#SXSW</span>
 </header>
-<div ng-repeat="feed in feeds" class="row marketing clear">
-  <div class="col w30">
-    <img ng-src="{{feed.image.url}}"  />
+<div class="row marketing clear">
+  <div class="col w50">
+    <span ng-if="currentStatus.image.url">
+    <img ng-src="{{currentStatus.image.url}}" style="max-height:70%" />
+    </span>
+    &nbsp;
   </div>
-  <div class="col w70">
-      <div class="description">
-       <h3>{{feed.author}}</h3>
-       <span ng-repeat="tag in feed.tags">{{tag}} &nbsp;</span>
-       </div>
+  <div class="col w50 statusInfo">
+        <div ng-if="currentStatus.text">
+           <h1>{{currentStatus.text}}</h1>
+        </div>
+       <h1 style="font-weight: 300"><span ng-if="currentStatus.source =='twitter'">@</span>{{currentStatus.username}}</h1>
+       <i ng-class="{'fa-twitter': currentStatus.source =='twitter', 'fa-instagram': currentStatus.source == 'instagram'}" class="fa fa-5x " style="color: rgb(0, 143, 255);"></i>
   </div>
 </div>
 <footer>
