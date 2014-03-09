@@ -91,11 +91,11 @@ angular.module('socialiteApp')
             $rootScope.feeds.slice(0,10);
 
             // Check if times are working
-            console.groupCollapsed('time');
-            for(var i=0; i<$rootScope.feeds.length; i++) {
-              console.log($rootScope.feeds[i].time)
-            }
-            console.groupEnd();
+            // console.groupCollapsed('time');
+            // for(var i=0; i<$rootScope.feeds.length; i++) {
+            //   console.log($rootScope.feeds[i].time)
+            // }
+            // console.groupEnd();
 
         };
 

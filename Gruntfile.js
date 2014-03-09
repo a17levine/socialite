@@ -148,9 +148,6 @@ module.exports = function (grunt) {
     },
 
 
-
-
-
     // Renames files for browser caching purposes
     rev: {
       dist: {
@@ -274,6 +271,16 @@ module.exports = function (grunt) {
       }
     },
 
+    // strip : {
+    //   main : {
+    //     src : '<%= yeoman.dist %>/scripts/{,*/}*.js',
+    //     options : {
+    //       inline : true
+    //     }
+    //   }
+    // },
+
+
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
@@ -362,6 +369,7 @@ module.exports = function (grunt) {
     'concat',
     'ngmin',
     'copy:dist',
+    // 'strip',
     'cdnify',
     'cssmin',
     'uglify',

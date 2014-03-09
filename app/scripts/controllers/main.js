@@ -18,7 +18,6 @@ angular.module('socialiteApp')
             if (i >= $rootScope.feeds.length) {
                 i = 0;
             }
-            console.log($rootScope.feeds[i]);
             $rootScope.currentStatus = $rootScope.feeds[i];
             i++;
 

@@ -1,0 +1,9 @@
+<!-- <div class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul>
+  <h3 class="text-muted">socialite</h3>
+</div>
+ --><header><span class="title">#SXSW</span></header><div class="row marketing clear"><div class="col w50"><span ng-if="currentStatus.image.url"><img ng-src="{{currentStatus.image.url}}" style="max-height:70%"></span> &nbsp;</div><div class="col w50 statusInfo"><div ng-if="currentStatus.text"><h1>{{currentStatus.text}}</h1></div><h1 style="font-weight: 700"><span ng-if="currentStatus.source =='twitter'">@</span>{{currentStatus.username}}</h1><i ng-class="{'fa-twitter': currentStatus.source =='twitter', 'fa-instagram': currentStatus.source == 'instagram'}" class="fa fa-5x"></i></div></div><footer><h2>Built by MakerSquare</h2></footer>
