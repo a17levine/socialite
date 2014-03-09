@@ -10,15 +10,17 @@ body {
 
 .statusInfo {
   text-align: right;
+  font-family: "Open Sans";
 }
 
 .statusInfo h1 {
-  font-size: 2.5em;
-  font-weight: 400;
+  font-size: 2.6em;
+  font-weight: 300;
 }
 
 body,header,footer {
-  background-color: #fff;
+  background-color: #000;
+  color: rgba(190, 14, 106, 1.00);
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -97,7 +99,7 @@ footer {
 }
 
 .title {
-  font-size: 4em;
+  font-size: 6em;
   font-weight: bold;
 }
 
@@ -129,17 +131,24 @@ img {
 header {
   top: 0;
   left: 0;
-  box-shadow: 0 1em 1em 0em #fff;
+/*  box-shadow: 0 1em 1em 0em #fff;*/
 }
 
 footer {
   bottom: 0;
   left: 0;
-  box-shadow: 0 -1em 1em 0em #fff;
+/*  box-shadow: 0 -1em 1em 0em #fff;*/
 }
 
 header, footer {
   position: fixed;
   width: 100%;
 
+}
+
+.fa-twitter {
+  color: rgb(0, 143, 255);
+}
+.fa-instagram {
+  color: rgb(133, 61, 21);
 }

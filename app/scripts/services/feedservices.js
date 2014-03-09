@@ -35,6 +35,11 @@ angular.module('socialiteApp')
 
             for (var x = 0; x < 5 ; x++) {
 
+                if (statuses[x].caption.text.length > 140) {
+                  statuses[x].caption.text = statuses[x].caption.text.substring(0,138) + "...";
+                }
+                
+
                 status = {
                     username: statuses[x].user.username,
                     id: statuses[x].id,

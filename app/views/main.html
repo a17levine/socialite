@@ -17,12 +17,12 @@
     </span>
     &nbsp;
   </div>
-  <div class="col w50 statusInfo">
+  <div class="col w50 statusInfo" >
         <div ng-if="currentStatus.text">
            <h1>{{currentStatus.text}}</h1>
         </div>
-       <h1 style="font-weight: 300"><span ng-if="currentStatus.source =='twitter'">@</span>{{currentStatus.username}}</h1>
-       <i ng-class="{'fa-twitter': currentStatus.source =='twitter', 'fa-instagram': currentStatus.source == 'instagram'}" class="fa fa-5x " style="color: rgb(0, 143, 255);"></i>
+       <h1 style="font-weight: 700"><span ng-if="currentStatus.source =='twitter'">@</span>{{currentStatus.username}}</h1>
+       <i ng-class="{'fa-twitter': currentStatus.source =='twitter', 'fa-instagram': currentStatus.source == 'instagram'}" class="fa fa-5x "></i>
   </div>
 </div>
 <footer>
